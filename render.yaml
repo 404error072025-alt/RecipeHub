@@ -30,7 +30,6 @@ services:
     name: recipehub-web
     runtime: static
     rootDir: .
-    plan: free
     buildCommand: npm install && npm run build
     staticPublishPath: dist
     routes:
