@@ -26,7 +26,7 @@ services:
       - key: WEB_CONCURRENCY
         value: "4"
 
-  - type: static
+  - type: static_site
     name: recipehub-web
     rootDir: .
     plan: free
