@@ -46,6 +46,15 @@ npm run dev
 Open the Vite URL shown in the terminal, normally:
 `http://localhost:5173`
 
+## Deploy to Render
+
+The repository includes `render.yaml`, which defines the Django API and React
+static site. In Render, choose **New > Blueprint**, connect the
+`404error072025-alt/RecipeHub` repository, and apply the blueprint. After the
+first deployment, confirm that the frontend URL is included in the backend
+services' `CORS_ALLOWED_ORIGINS` and `DJANGO_CSRF_TRUSTED_ORIGINS` environment
+variables if you use a custom domain.
+
 ## Login/Register API
 - `POST /api/auth/register/`
 - `POST /api/auth/login/`
