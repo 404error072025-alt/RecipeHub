@@ -16,9 +16,9 @@ services:
       - key: DJANGO_DEBUG
         value: "False"
       - key: DJANGO_ALLOWED_HOSTS
-        value: recipehub-api.onrender.com,localhost,127.0.0.1
+        value: recipehub-api-6osz.onrender.com,recipehub-api.onrender.com,localhost,127.0.0.1
       - key: DJANGO_CSRF_TRUSTED_ORIGINS
-        value: https://recipehub.onrender.com,https://recipehub-web.onrender.com,https://recipehub-api.onrender.com,http://localhost:5173,http://127.0.0.1:5173
+        value: https://recipehub.onrender.com,https://recipehub-web.onrender.com,https://recipehub-api-6osz.onrender.com,https://recipehub-api.onrender.com,http://localhost:5173,http://127.0.0.1:5173
       - key: CORS_ALLOWED_ORIGINS
         value: https://recipehub.onrender.com,https://recipehub-web.onrender.com,http://localhost:5173,http://127.0.0.1:5173
       - key: PYTHON_VERSION
@@ -38,4 +38,4 @@ services:
         destination: /index.html
     envVars:
       - key: VITE_API_BASE_URL
-        value: https://recipehub-api.onrender.com
+        value: https://recipehub-api-6osz.onrender.com
