@@ -26,8 +26,9 @@ services:
       - key: WEB_CONCURRENCY
         value: "4"
 
-  - type: static_site
+  - type: web
     name: recipehub-web
+    runtime: static
     rootDir: .
     plan: free
     buildCommand: npm install && npm run build
